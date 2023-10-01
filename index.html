@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deepak Sharma</title>
+    <style>
+        /* Default Theme Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        h1 {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* PDF and Video Sections Styles */
+        h2 {
+            color: #3498db;
+        }
+
+        /* Downloadable PDF Links Styles */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        /* Embedded YouTube Video Styles */
+        .video-container {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .video-thumbnail {
+            max-width: 120px;
+            margin-right: 20px;
+        }
+
+        /* Dark Theme Styles */
+        .dark-theme {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Deepak Sharma, Sajan's friend's website</h1>
+    
+    <!-- PDF Section -->
+    <h2>PDF Files</h2>
+    <ul>
+        <li><a href="link-to-pdf-1.pdf" download>PDF 1</a></li>
+        <li><a href="link-to-pdf-2.pdf" download>PDF 2</a></li>
+    </ul>
+    
+    <!-- YouTube Video Section -->
+    <h2>YouTube Videos</h2>
+
+    <!-- Video 1 -->
+    <div class="video-container">
+        <img class="video-thumbnail" src="" alt="Video 1 Thumbnail">
+        <div>
+            <h3>Video 1 Title</h3>
+            <p>Video 1 Description</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video-container">
+        <img class="video-thumbnail" src="" alt="Video 2 Thumbnail">
+        <div>
+            <h3>Video 2 Title</h3>
+            <p>Video 2 Description</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- JavaScript for Theme Switching -->
+    <script>
+        // Function to toggle between light and dark themes
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-theme');
+        }
+
+        // Listen for theme toggle button click
+        const themeToggleBtn = document.querySelector('#theme-toggle-btn');
+        themeToggleBtn.addEventListener('click', toggleTheme);
+    </script>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle-btn">Toggle Theme</button>
+</body>
+</html>
